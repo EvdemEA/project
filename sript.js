@@ -208,9 +208,29 @@
 
 // console.log(calc);
 
-// МЕТОДЫ И СВОЙСТВА
-const str = 'test';
-const arr = [1, 2, 3];
+// МЕТОДЫ И СВОЙСТВА СТРОК
+// const str = 'teSt';
+// // const arr = [1, 2, 3];
+// // console.log(arr.length);
 
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str[2].toLowerCase());
 
-console.log(arr.length);
+// let fruit = 'Some fruit';
+// console.log(fruit.indexOf('fruit'));
+
+// const logg = 'Hello world!';
+// console.log(logg.slice(6, 12));
+// console.log(logg.substring(6, 12));
+// console.log(logg.substr(6, 6));
+
+// МЕТОДЫ И СВОЙСТВА ЧИСЕЛ
+// щкругление в меньшую и большую сторону
+const num = 12.2;
+console.log(Math.round(num));
+console.log(Math.ceil(num));
+// из строки в число
+const test = '12.2px';
+console.log(parseInt(test));
+console.log(parseFloat(test));
