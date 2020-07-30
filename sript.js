@@ -263,23 +263,23 @@
 
 // Объекты и деструктуризация объектов
 
-const options = {
-  name: 'test',
-  width: 1024,
-  height: 1024,
-  colors: {
-    border: 'black',
-    bg: 'red'
-  },
-  makeTest: function() {
-    console.log('Test');
-  }
-};
+// const options = {
+//   name: 'test',
+//   width: 1024,
+//   height: 1024,
+//   colors: {
+//     border: 'black',
+//     bg: 'red'
+//   },
+//   makeTest: function() {
+//     console.log('Test');
+//   }
+// };
 
-options.makeTest();
-// Деструктуризация
-const {border, bj} = options.colors;
-console.log(border);
+// options.makeTest();
+// // Деструктуризация
+// const {border, bj} = options.colors;
+// console.log(border);
 // console.log(Object.keys(options));
 // console.log(options.height);
 // delete options.name;
@@ -300,3 +300,31 @@ console.log(border);
 
 // console.log(counter);
 
+// Массивы и псевдомассивы
+const arr = [1, 24, 3, 43, 85];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+  return a - b;
+}
+// arr.forEach(function (item, i, arr) {
+//   console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+// arr.pop();
+// console.log(arr);
+// arr.push(10);
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+//   console.log(value);
+// }
+
+// const str = prompt('', '');
+// const products = str.split(',');
+// products.sort();
+// console.log(products.join(';'));
