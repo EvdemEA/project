@@ -227,10 +227,76 @@
 
 // МЕТОДЫ И СВОЙСТВА ЧИСЕЛ
 // щкругление в меньшую и большую сторону
-const num = 12.2;
-console.log(Math.round(num));
-console.log(Math.ceil(num));
-// из строки в число
-const test = '12.2px';
-console.log(parseInt(test));
-console.log(parseFloat(test));
+// const num = 12.2;
+// console.log(Math.round(num));
+// console.log(Math.ceil(num));
+// // из строки в число
+// const test = '12.2px';
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+// CALLBACK FUNCTIONS
+// function first() {
+//   // do something
+//   setTimeout(function() {
+//     console.log(1);
+//   }, 500);
+// }
+
+// function second() {
+//   console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback) {
+//   console.log(`Я учу ${lang}`);
+//   callback();
+// }
+
+// function done() {
+//   console.log('Я прошёл этот урок!');
+// }
+
+// learnJS('JavaScript', done);
+
+// Объекты и деструктуризация объектов
+
+const options = {
+  name: 'test',
+  width: 1024,
+  height: 1024,
+  colors: {
+    border: 'black',
+    bg: 'red'
+  },
+  makeTest: function() {
+    console.log('Test');
+  }
+};
+
+options.makeTest();
+// Деструктуризация
+const {border, bj} = options.colors;
+console.log(border);
+// console.log(Object.keys(options));
+// console.log(options.height);
+// delete options.name;
+// console.log(options);
+
+// let counter = 0;
+// for (let key in options) {
+//   if (typeof(options[key]) === 'object') {
+//     for (let i in options[key]) {
+//       console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//       counter++;
+//     }
+//   } else {
+//     console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     counter++;
+//   }
+// }
+
+// console.log(counter);
+
